@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+body {
+    background-color: #f1f5f8;
+}
+
+a {
+    text-decoration: none;
+    font-size: calc(15px + 10*(100vw / 1400));
+    color: #282428;
+}
+
+h3 {
+    color: #282428;
+    font-size: calc(15px + 10*(100vw / 1400));
+}
+
+@media (max-width: 700px) {
+    h3 a {
+        font-size: calc(15px + (10 + 10*0.7) * ((100vw - 300px) / 1400));
+}
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 30px;
+    margin: 3% 5%;
+    padding-bottom: 2%;
+    border-bottom: #282428 solid 2px ;
+}
+
+.nav-center__links a {
+    margin-right: 4vw;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: black;
+    border-radius: 7px;
+    color: white;
+    transition: 0.5s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+}
+
+.container h2 {
+    font-size: calc(25px + (10 + 10*0.7) * ((100vw - 300px) / 1400));
+    text-align: center;
+}
+
+.container button {
+    margin-top: 5vh;
+    width: 10vw;
+    height: 7vh;
+    background-color: transparent;
+    color: #282428;
+    border: solid black 2px;
+    box-shadow: 0px 10px 15px 7px rgba(34, 60, 80, 0.2);
+    border-radius: 7px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .container button {
+        width: 15vh;
+    }
+}
